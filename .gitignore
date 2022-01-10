@@ -1,2 +1,3 @@
 build/
 .eggs/
+.DS_store

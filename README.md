@@ -1,5 +1,5 @@
 # pyPickyPixels
-A GUI interface built in Python to filter user videos by resolution, either moving them into a specified output folder or deleting them, depending on user preference.
+A GUI built in Python to filter user videos by resolution, either moving them into a specified output folder or deleting them, depending on user preference.
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![GitHub version](https://badge.fury.io/gh/lukthony%2FpyPickyPixels.svg)](https://github.com/lukthony/pyPickyPixels)

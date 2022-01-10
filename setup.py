@@ -10,7 +10,7 @@ from setuptools import setup
 APP = ['main.py']
 DATA_FILES = ['icons/pyPickyPixelsIcon.icns','icons/pyPickyPixelsIcon.png']
 OPTIONS = {'iconfile': 'icons/pyPickyPixelsIcon.icns',
-            'includes': ['pySimpleGUI','cv2','shutil','os','base64','urllib'] }
+            'includes': ['pySimpleGUI','cv2','shutil','os','base64'] }
 
 setup(
     app=APP,

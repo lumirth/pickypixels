@@ -3,7 +3,7 @@ import cv2               # for getting video resolution
 import shutil            # for moving files
 import os                # for deleting files
 import base64                       # for encoding icon to base64
-from urllib.request import urlopen  # for opening online icon file
+# from urllib.request import urlopen  # for opening online icon file
 
 # v1.0.1
 

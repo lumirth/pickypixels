@@ -19,3 +19,7 @@ OSes supported(untested):
 
 <img width="501" alt="Screen Shot 2022-01-09 at 11 49 11 PM" src="https://user-images.githubusercontent.com/65358837/148723122-e0c18604-1456-46e6-b867-726930430342.png">
 </p
+
+## Known Issues
+  
+  - Images are filtered instead of ignored

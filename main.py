@@ -3,7 +3,6 @@ import cv2               # for getting video resolution
 import shutil            # for moving files
 import os                # for deleting files
 import base64                       # for encoding icon to base64
-# from urllib.request import urlopen  # for opening online icon file
 
 # v1.0.1
 
@@ -11,6 +10,7 @@ sg.change_look_and_feel('Material2') # Add a touch of color
 sg.set_options(icon=base64.b64encode(open(r'pyPickyPixelsIcon.png', 'rb').read()))
  
 # Left column, to contain list of files to filter
+# TODO: allow listbox to adjust to file name length
 fileColumn = [  [sg.Listbox(values = [], size = (40,15), k = 'LB', horizontal_scroll=True, enable_events=True)],
                 [sg.In(visible = False, enable_events=True, k = 'inputFiles')],
                 [sg.FilesBrowse('  Add Files  ', target = (-1,0)), sg.Button('  Empty List  ', k = 'emptyList')] ]
@@ -27,6 +27,9 @@ optionColumn = [ [sg.Text('Specify a resolution to filter out:')],
                  [sg.FolderBrowse(target=(-1, 0))],
                  [sg.Column([[sg.Button('  RUN  ', k = 'run', enable_events = True)]], justification='r')] ]
 
+# TODO: add options menu layout
+# TODO consider default options
+
 # Layout for the entire window
 layout = [[sg.Column(fileColumn),sg.Column(optionColumn)]]
 
@@ -41,6 +44,7 @@ while True:
             window['LB'].update([])
             LB_vals = []
     elif event == 'inputFiles': # if user adds files (add files button)
+            # TODO: fix files being replaced instead of appended
             input = values['inputFiles'].split(';') # split the list of inputted files at the semicolon
             newFiles = []
             for i in input: # add filepaths to newFiles list
@@ -59,8 +63,10 @@ while True:
         
         if listBox:
             for file in listBox:
+                # check extension
                 fileAndExt = os.path.splitext(file)
                 extension = fileAndExt[1].lower()
+                # if extension is supported
                 if (extension in supportedExtensions):
                     if values['delete'] == True:
                         delete = True # enables delete mode
@@ -87,5 +93,4 @@ while True:
             if worked:
                 sg.Popup('Operation succeeded', keep_on_top = True)
                         
-    # pprint.pprint(values)
 window.close()

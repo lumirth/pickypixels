@@ -2,8 +2,9 @@ import PySimpleGUI as sg # for GUI library
 import cv2               # for getting video resolution
 import shutil            # for moving files
 import os                # for deleting files
+import base64
 
-# v1.0.0
+# v1.0.1
 
 sg.change_look_and_feel('Material2') # Add a touch of color
  
@@ -28,8 +29,8 @@ optionColumn = [ [sg.Text('Specify a resolution to filter out:')],
 layout = [[sg.Column(fileColumn),sg.Column(optionColumn)]]
 
 # Create the Window
+sg.set_options(icon=base64.b64encode(open(r'icons/pyPickyPixelsIcon.png', 'rb').read()))
 window = sg.Window('pyPickyPixels', layout, resizable=True, element_justification='center')
-
 # Event Loop to process "events" and get the "values" of the inputs
 while True:
     event, values = window.read()

@@ -1,42 +1,49 @@
-import PySimpleGUI as sg
+import PySimpleGUI as sg # for GUI library
+import pprint
+"""
+import cv2 # for getting video file resolution
+file_path = "/Users/lukasunguraitis/Desktop/20220109132357.MP4"  # change to your own video path
+vid = cv2.VideoCapture(file_path)
+height = vid.get(cv2.CAP_PROP_FRAME_HEIGHT)
+width = vid.get(cv2.CAP_PROP_FRAME_WIDTH)
+print(str(int(height))+'x'+str(int(width)))
+"""
 
-sg.change_look_and_feel('Material2')
+sg.change_look_and_feel('Material2') # Add a touch of color
+ 
+# Left column, to contain list of files to filter
+fileColumn = [  [sg.Listbox([], size = (40,15), k = 'LB', horizontal_scroll=True)],
+                [sg.In(visible = False, enable_events=True, k = 'inputFiles')],
+                [sg.FilesBrowse('  Add Files  ', target = (-1,0)), sg.Button('  Empty List  ', k = 'emptyList')] ]
 
-# sg.theme('aqua')   # Add a touch of color
-# All the stuff inside your window.
-fileColumn = [  [sg.Listbox(['fuck','penis','balls'], size = (30,15), k = 'LB')],
-                [sg.Button('  Add Files  '), sg.Button('  Empty List  ')] ]
-
+# Right column, to contains settings and run button
 optionColumn = [ [sg.Text('Specify a resolution to filter out:')],
                  [sg.Spin([i for i in range(0,10000)], initial_value=1080), sg.Text('Height')],
                  [sg.Spin([i for i in range(0,10000)], initial_value=1920), sg.Text('Width')],
                  [sg.Text('Choose a mode:')],
-                 [sg.Radio('Delete', "RADIO1"),
+                 [sg.Radio('Delete', "RADIO1", default = False, k = 'delete'),
                   sg.Radio('Output Folder', "RADIO1", default=True)],
                  [sg.T('Specify Output Folder')],
-                 [sg.In(size = (30, 6))],
+                 [sg.In(size = (30, 6), enable_events=True, k = 'outputFolder')],
                  [sg.FolderBrowse(target=(-1, 0))],
                  [sg.Column([[sg.Button('  RUN  ')]], justification='r')] ]
 
-"""
-event, values = sg.Window('Window Title').Layout([[sg.Input(key='_FILES_'), sg.FilesBrowse()], [sg.OK(), sg.Cancel()]]).Read()
-
-print(values['_FILES_'].split(';'))
-"""
 
 layout = [[sg.Column(fileColumn),sg.Column(optionColumn)]]
 
 # Create the Window
-window = sg.Window('pyPickyPixels', layout, ttk_theme='default', resizable=True, element_justification='center')
+window = sg.Window('pyPickyPixels', layout, resizable=True, element_justification='center')
 # Event Loop to process "events" and get the "values" of the inputs
 while True:
     event, values = window.read()
-    if event == sg.WIN_CLOSED or event == 'Cancel': # if user closes window or clicks cancel
+    if event == sg.WIN_CLOSED: # if user closes window
         break
-    if event == '  Add Files  ':
+    elif event == 'emptyList':
             window['LB'].update([])
-    if event == '  Empty List  ':
-            window['LB'].update([])
-    print('You entered ', values[0])
-
+    elif event == 'inputFiles':
+            input = values['inputFiles'].split(';')
+            newFiles = []
+            for i in input:
+                newFiles.append(i)
+            window['LB'].update(newFiles)
 window.close()

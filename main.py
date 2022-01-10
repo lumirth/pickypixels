@@ -3,6 +3,8 @@ import cv2               # for getting video resolution
 import shutil            # for moving files
 import os                # for deleting files
 
+# v1.0.0
+
 sg.change_look_and_feel('Material2') # Add a touch of color
  
 # Left column, to contain list of files to filter

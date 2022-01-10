@@ -8,10 +8,9 @@ Usage:
 from setuptools import setup
 
 APP = ['main.py']
-DATA_FILES = ['/Users/lukasunguraitis/Documents/5 Vault/GitHub/pyPickyPixels/icons/pyPickyPixelsIcon.icns']
-OPTIONS = {'iconfile': '/Users/lukasunguraitis/Documents/5 '
-             'Vault/GitHub/pyPickyPixels/icons/pyPickyPixelsIcon.icns',
-            'includes': ['pySimpleGUI','cv2','shutil','os'] }
+DATA_FILES = ['icons/pyPickyPixelsIcon.icns','icons/pyPickyPixelsIcon.png']
+OPTIONS = {'iconfile': 'icons/pyPickyPixelsIcon.icns',
+            'includes': ['pySimpleGUI','cv2','shutil','os','base64','urllib'] }
 
 setup(
     app=APP,

@@ -7990,7 +7990,7 @@
 		</data>
 		<key>Resources/lib/python310.zip</key>
 		<data>
-		QBAVzHffjqeGzynbywz51vz7NCI=
+		yTtC1PmpZ1QYlFRt/XUvrD9ZLyo=
 		</data>
 		<key>Resources/lib/tcl8.6/auto.tcl</key>
 		<data>
@@ -9582,15 +9582,19 @@
 		</data>
 		<key>Resources/main.py</key>
 		<data>
-		nUB1SpGzxHh6ySXivHl7DL8U1vk=
+		QgeVbSp+/nli1h9WRIAE6U9s6dY=
 		</data>
 		<key>Resources/pyPickyPixelsIcon.icns</key>
 		<data>
-		AK7x2vn75g+f773eB34AtPUFVUg=
+		/3soC6F0k96kAjceGJdjYjnF94A=
+		</data>
+		<key>Resources/pyPickyPixelsIcon.png</key>
+		<data>
+		wBiUiJ6Gc4oSDgKR3EIeX2WhJqE=
 		</data>
 		<key>Resources/site.pyc</key>
 		<data>
-		HhxhkJIFzPNcR5h0bHsLRsjfEao=
+		u27rXeGdkHes/Ao/He/EPcf5q0g=
 		</data>
 		<key>Resources/zlib.cpython-310-darwin.so</key>
 		<data>
@@ -31627,11 +31631,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QBAVzHffjqeGzynbywz51vz7NCI=
+			yTtC1PmpZ1QYlFRt/XUvrD9ZLyo=
 			</data>
 			<key>hash2</key>
 			<data>
-			inwP8dKRWLPbuONlVigM7pH7NEkECMzSxXNuhpmT9Qs=
+			xq3NCLBG/rzVjmCwnxtE9L4q3lr4Mv45vgf8nIUnJhM=
 			</data>
 		</dict>
 		<key>Resources/lib/tcl8.6/auto.tcl</key>
@@ -36005,33 +36009,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nUB1SpGzxHh6ySXivHl7DL8U1vk=
+			QgeVbSp+/nli1h9WRIAE6U9s6dY=
 			</data>
 			<key>hash2</key>
 			<data>
-			iAC87tGCCOSJQNVtdHfoW5EGXzdujjmvEMqA/cJ8yRA=
+			0/zcLTLnre7eOo6PmsqAFTZdT2bBYGtRKx4h/MGQqJo=
 			</data>
 		</dict>
 		<key>Resources/pyPickyPixelsIcon.icns</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AK7x2vn75g+f773eB34AtPUFVUg=
+			/3soC6F0k96kAjceGJdjYjnF94A=
 			</data>
 			<key>hash2</key>
 			<data>
-			RjuOzpPcVxQLlglMx3I5pdfWFcdCtRXxmH56Xn2BQWw=
+			I24E5LIMDAQBSzbr08pCID7MHu/Jg/Qg2RESYDpoWXQ=
+			</data>
+		</dict>
+		<key>Resources/pyPickyPixelsIcon.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wBiUiJ6Gc4oSDgKR3EIeX2WhJqE=
+			</data>
+			<key>hash2</key>
+			<data>
+			P26t+eMmbzJWYmhSVhMC3R5FNHTvQbUwLn6lqKaGVkc=
 			</data>
 		</dict>
 		<key>Resources/site.pyc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HhxhkJIFzPNcR5h0bHsLRsjfEao=
+			u27rXeGdkHes/Ao/He/EPcf5q0g=
 			</data>
 			<key>hash2</key>
 			<data>
-			Xgd91Y6YRglQvIxdc5wFMU0OdLkw6p/nDo80ZJ1bGaE=
+			GYwngvTT8wvf/8jcR2zppG68dWiN0EhM8aKzyGs3Lho=
 			</data>
 		</dict>
 		<key>Resources/zlib.cpython-310-darwin.so</key>

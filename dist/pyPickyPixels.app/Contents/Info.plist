@@ -68,7 +68,7 @@
 	<key>PythonInfoDict</key>
 	<dict>
 		<key>PythonExecutable</key>
-		<string>/Library/Frameworks/Python.framework/Versions/3.10/bin/python3</string>
+		<string>/usr/local/bin/python</string>
 		<key>PythonLongVersion</key>
 		<string>3.10.0 (v3.10.0:b494f5935c, Oct  4 2021, 14:59:19) [Clang 12.0.5 (clang-1205.0.22.11)]</string>
 		<key>PythonShortVersion</key>

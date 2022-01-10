@@ -51,6 +51,7 @@ while True:
         delete = False # variable for whether delete mode is enable or disable
         worked = False # variable for if operation succeeded or failed
         
+        # TODO: add support for ignoring images
         if listBox:
             for file in listBox:
                 if values['delete'] == True:

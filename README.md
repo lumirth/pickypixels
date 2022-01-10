@@ -26,7 +26,7 @@ OSes supported(but untested):
 PPP(pyPickyPixels) can be installed one of two ways:
 
 - If your OS has a supported binary(currently just macOS), you can download it from the [releases page](https://github.com/lukthony/pyPickyPixels/releases/tag/v1.0.0)
-- If your OS doesn't have a supported binary, you can download the [source code](https://github.com/lukthony/pyPickyPixels/archive/refs/heads/main.zip) and run `main.py` it using [Python 3.10](https://www.python.org/downloads/release/python-3100/). PPP uses the [PySimpleGUI](https://pypi.org/project/PySimpleGUI/) and [OpenCV](https://pypi.org/project/opencv-python/) modules.
+- If your OS doesn't have a supported binary, you can download the [source code](https://github.com/lukthony/pyPickyPixels/archive/refs/heads/main.zip) and run `main.py` using [Python 3.10](https://www.python.org/downloads/release/python-3100/). PPP uses the [PySimpleGUI](https://pypi.org/project/PySimpleGUI/) and [OpenCV](https://pypi.org/project/opencv-python/) modules.
 
 ## Usage
 PPP supports the following video file formats: `['.webm','.mpg','.mp2','.mpeg','.mpe','.mpv','.ogg','.mp4','.m4p','.m4v','.m4v','.avi','.wmv','.mov','.qt','.flv','.swf','.hevc','.heic']`

@@ -47,3 +47,4 @@ This is PPP's interface. In order to use it, you can select the `Add Files` butt
 ## Known Issues
  
   - ~~Images are filtered instead of ignored~~ — **Fixed v1.0.1**
+  - Files cannot be added in multiple batches

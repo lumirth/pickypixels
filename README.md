@@ -18,8 +18,7 @@ OSes supported(but untested):
 <p align="center">
 <img width="256" alt="Screen Shot 2022-01-09 at 11 49 11 PM" src="https://user-images.githubusercontent.com/65358837/148723146-80e01e97-8bac-425b-9830-3566af3d2915.png">
 
-
-<img width="501" alt="Screen Shot 2022-01-09 at 11 49 11 PM" src="https://user-images.githubusercontent.com/65358837/148723122-e0c18604-1456-46e6-b867-726930430342.png">
+<img width="400" alt="Screen Shot 2022-01-09 at 11 49 11 PM" src="https://user-images.githubusercontent.com/65358837/150022604-2bfe5f19-61ae-41ec-9516-bfe6d2b6ea79.png">
 </p>
 
 ## Installation
